@@ -18,7 +18,7 @@ Lastly is <ins>Generative AI</ins>, which produces content and performs tasks ba
 <img src="https://github.com/user-attachments/assets/67f446e3-5101-4330-a5f1-c4cf9dd58bf8" />
 </p><br/><br/>
 
-<ins>Pre-trained APIs</ins>:
+<ins>Pre-trained APIs</ins>: Here you directly call Google's train models to solve your problems.
 
     - Speech, text and language APIs.
     - Image and video APIs.
@@ -28,6 +28,8 @@ Lastly is <ins>Generative AI</ins>, which produces content and performs tasks ba
 <ins>Vertex AI</ins>: Unified platform that supports various technologies and tools on Google Cloud to help you build an ML project from end to end.
 
 <ins>AutoML</ins>: AutoML, which stands for Automated Machine Learning, aims to automate the process to develop and deploy an ML model.
+
+<ins>Custom training</ins>: You do it yourself solution to build an ML project.
 
 
 
