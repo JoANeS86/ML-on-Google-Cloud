@@ -1,4 +1,4 @@
-## AI and ML
+## Introduction to AI and Machine Learning on Google Cloud
 
 <ins>Artificial intelligence</ins>, or <ins>AI</ins>, is an umbrella term that includes anything related to computers mimicking human intelligence. Some examples of AI applications include robots and self-driving cars.
 
