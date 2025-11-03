@@ -31,6 +31,28 @@ Lastly is <ins>Generative AI</ins>, which produces content and performs tasks ba
 
 <ins>Custom training</ins>: You do it yourself solution to build an ML project.
 
+**AI Development Workflow**
+
+There are three main stages to the ML workflow with Vertex AI.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/81ec9af3-49cf-4471-b65a-924441079a86" />
+</p>
+
+        - Data preparation:
+        
+                Two steps: Data uploading and feature engineering.
+                Data types: Streaming versus batch data, and structured versus unstructured data.
+                
+        - Data development: A model needs a tremedous amount of iterative training (Train the model, evaluate it, train the model some more).
+
+        - Model serving: Deploy and monitor the model.
+
+Compare this process to serving food in a restaurant. Data preparation is when you prepare the raw ingredients, model development is when you experiment with different recipes, and model serving is when you finalize the menu to serve the meal to customers.
+
+**It's important to note that an ML workflow isn't linear, it's iterative.**
+
+
 
 
 
