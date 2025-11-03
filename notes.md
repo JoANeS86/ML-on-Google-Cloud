@@ -36,7 +36,7 @@ Lastly is <ins>Generative AI</ins>, which produces content and performs tasks ba
 There are three main stages to the ML workflow with Vertex AI.
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/81ec9af3-49cf-4471-b65a-924441079a86" />
+<img src="https://github.com/user-attachments/assets/ffd94702-b087-4bc9-a5a2-31a2e89808ec" />
 </p>
 
         - Data preparation:
@@ -52,6 +52,18 @@ There are three main stages to the ML workflow with Vertex AI.
 Compare this process to serving food in a restaurant. Data preparation is when you prepare the raw ingredients, model development is when you experiment with different recipes, and model serving is when you finalize the menu to serve the meal to customers.
 
 **It's important to note that an ML workflow isn't linear, it's iterative.**
+
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/a3c27f24-4d45-48b3-9c6e-e9a61036249e" />
+</p>
+
+
+
+
+
+
+
 
 
 
