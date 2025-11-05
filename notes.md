@@ -53,12 +53,36 @@ Compare this process to serving food in a restaurant. Data preparation is when y
 
 **It's important to note that an ML workflow isn't linear, it's iterative.**
 
-
 <p align="center">
 <img src="https://github.com/user-attachments/assets/a3c27f24-4d45-48b3-9c6e-e9a61036249e" />
 </p>
 
 ## Build, Train and Deploy ML Models with Keras on Google Cloud
+
+**Introduction to the TensorFlow Ecosystem**
+
+TensorFlow in an open-source, high-performance library for numerical computation that uses directed graphs.<br/><br/>
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/c4acba15-4178-4196-a805-92451251a464" />
+</p><br/><br/>
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/80eef629-e583-4ede-82e2-ab4d39c6d321" />
+</p><br/><br/>
+
+<ins>TensorFlow API Hierarchy</ins><br/><br/>
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/20e12123-9aaa-49ab-8b6c-cb8db3401eb9" />
+</p>
+
+**Design and Build an Input Data Pipeline**
+
+
+
+
+
 
 
 
