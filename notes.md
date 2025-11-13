@@ -79,9 +79,9 @@ TensorFlow in an open-source, high-performance library for numerical computation
 
 **Design and Build an Input Data Pipeline**
 
+**Building Neural Networks witht he TensorFlow and Keras API**
 
-
-
+Keras is a neural network Application Programming Interface (API) for Python that is tightly integrated with TensorFlow, which is used to build machine learning models. Keras' models offer a simple, user-friendly way to define a neural network, which will then be built for you by TensorFlow.
 
 
 
