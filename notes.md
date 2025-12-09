@@ -12,6 +12,18 @@ Also:
 
 - <ins>Generative AI</ins>, which produces content and performs tasks based on requests. Generative AI relies on training extensive models like Large Language Models. These models are a type of Deep Learning model.
 
+AI Infrastructure
+
+Google Cloud’s AI infrastructure has three layers: **networking & security** (foundation), **compute & storage** (scalable processing and data storage, including TPUs and BigQuery), and **data & AI products** (tools like Pub/Sub, Dataflow, and Vertex AI to ingest, analyze, and act on data).
+
+It lets organizations go from raw data to AI insights efficiently without managing hardware.
+
+AI models
+
+- <ins>Supervised learning</ins>: Classification, Regression
+
+- <ins>Unsupervised learning</ins>: Clustering, Association, Dimensionality reduction.
+
 **AI Development Options**
 
 <p align="center">
