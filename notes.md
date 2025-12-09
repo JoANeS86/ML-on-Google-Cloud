@@ -6,7 +6,11 @@
 
 You might also hear the terms <ins>Deep Learning</ins> or <ins>Deep Neural Networks</ins>. This is a subset of Machine Learning that adds layers in between input data and output results to make a machine learn at more depth. You'll learn more about Neural Networks and Deep Learning later in this course.
 
-Lastly is <ins>Generative AI</ins>, which produces content and performs tasks based on requests. Generative AI relies on training extensive models like Large Language Models. These models are a type of Deep Learning model.
+Also:
+
+    <ins>Predictive AI</ins>, forecasts future outcomes from historical data (e.g., predicting customer churn).
+
+    <ins>Generative AI</ins>, which produces content and performs tasks based on requests. Generative AI relies on training extensive models like Large Language Models. These models are a type of Deep Learning model.
 
 **AI Development Options**
 
