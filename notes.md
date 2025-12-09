@@ -8,9 +8,9 @@ You might also hear the terms <ins>Deep Learning</ins> or <ins>Deep Neural Netwo
 
 Also:
 
-    <ins>Predictive AI</ins>, forecasts future outcomes from historical data (e.g., predicting customer churn).
+- <ins>Predictive AI</ins>, forecasts future outcomes from historical data (e.g., predicting customer churn).
 
-    <ins>Generative AI</ins>, which produces content and performs tasks based on requests. Generative AI relies on training extensive models like Large Language Models. These models are a type of Deep Learning model.
+- <ins>Generative AI</ins>, which produces content and performs tasks based on requests. Generative AI relies on training extensive models like Large Language Models. These models are a type of Deep Learning model.
 
 **AI Development Options**
 
