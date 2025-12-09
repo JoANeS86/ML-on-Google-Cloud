@@ -24,6 +24,14 @@ It lets organizations go from raw data to AI insights efficiently without managi
 
 - <ins>Unsupervised learning</ins>: Clustering, Association, Dimensionality reduction.
 
+<ins>**BigQuery ML Key Phases**</ins>:
+
+        - Extract, transform, and load data into BigQuery.
+        - Select and preprocess features.
+        - Create the model inside BigQuery.
+        - Evaluate the performance of the trained model.
+        - Use the model to make predictions.
+
 **AI Development Options**
 
 <p align="center">
