@@ -32,6 +32,10 @@ It lets organizations go from raw data to AI insights efficiently without managi
         - Evaluate the performance of the trained model.
         - Use the model to make predictions.
 
+<br/><br/><br/><br/><br/><br/>
+Horizontal AI / Vertical AI
+<br/><br/><br/><br/><br/><br/>
+
 **AI Development Options**
 
 <p align="center">
