@@ -37,6 +37,9 @@ It lets organizations go from raw data to AI insights efficiently without managi
 <p align="center">
 <img src="https://github.com/user-attachments/assets/34c34045-d71c-4cf6-b6ad-e81bfbda9e2c" />
 </p><br/><br/>
+<br/><br/><br/><br/><br/><br/>
+How to interact?
+<br/><br/><br/><br/><br/><br/>
 
 **AI Development Options**
 
