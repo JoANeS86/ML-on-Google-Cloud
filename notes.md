@@ -45,6 +45,8 @@ There are three main approaches for developers to interact with foundational mod
         - API
         - SDKs
 
+**Vertex AI Studio** is a low-code/no-code platform that lets users—from non-technical business analysts to AI developers—rapidly prototype, customize, and deploy generative AI applications using foundation models like Gemini. Effective AI prompts include **task, context, and examples**, and can use techniques like zero-shot, few-shot, chain-of-thought, or retrieval-augmented generation. The platform also offers AI-assisted prompt creation, a prompt gallery, and support for multimodal inputs and outputs, enabling users like Bia and Anne to quickly turn ideas into working AI apps.
+
 **AI Development Options**
 
 <p align="center">
