@@ -51,6 +51,14 @@ There are three main approaches for developers to interact with foundational mod
 
 The second half of the **prompt-to-production lifecycle** in Vertex AI Studio covers **integration, deployment, monitoring, and optimization.** Users can generate code automatically, use SDKs or APIs, and deploy AI apps without worrying about cloud infrastructure. To ensure accurate, up-to-date outputs, models can be **grounded** with trusted data, often via **RAG**. Model quality can be further improved through **prompt design, parameter-efficient tuning**, or **full fine-tuning** using labeled datasets. Vertex AI Studio supports these tuning methods, allowing users to create, monitor, and deploy customized generative AI models for specific tasks, with both technical and low-code approaches.
 
+**AI Agents**
+
+AI agents extend foundation models by enabling them to take actions, access external systems, and automate multi-step workflows. Unlike standalone models, AI agents combine three core components—a **model** for reasoning and decision-making, **tools** for interacting with external applications and data, and an **orchestration layer** that manages actions and feedback loops—to achieve goal-oriented, autonomous behavior. Agents can retrieve information, validate decisions, and execute tasks like sending emails, while agentic AI coordinates multiple agents for more complex, end-to-end processes, making AI increasingly practical for real-world applications.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/eb0928b4-8592-4089-b1a1-34c3e48b96a3" />
+</p><br/><br/>
+
 **AI Development Options**
 
 <p align="center">
@@ -68,7 +76,7 @@ The second half of the **prompt-to-production lifecycle** in Vertex AI Studio co
     - Document and data APIs.
     - Conversational AI APIs.
     
-<ins>Vertex AI</ins>: Unified platform that supports various technologies and tools on Google Cloud to help you build an ML project from end to end.
+<ins>Vertex AI</ins>: Unified platform that supports various technologies and tools on Google Cloud to help you build an ML project from end to end (it simplifies building, deploying, and managing machine learning models at scale).
 
 <ins>AutoML</ins>: AutoML, which stands for Automated Machine Learning, aims to automate the process to develop and deploy an ML model.
 
