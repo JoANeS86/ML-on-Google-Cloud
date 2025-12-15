@@ -80,6 +80,8 @@ AI agents extend foundation models by enabling them to take actions, access exte
 
 <ins>AutoML</ins>: AutoML, which stands for Automated Machine Learning, aims to automate the process to develop and deploy an ML model.
 
+**AutoML** in Vertex AI automates the end-to-end machine learning process, from data preparation to model deployment, without requiring code. AutoML works in four phases: (1) **data processing**, converting different data types for modeling; (2) **model search and parameter tuning**, using Neural Architecture Search to find optimal models and Transfer Learning to leverage pre-trained models for faster, more accurate results; (3) **model assembly**, combining top-performing models; and (4) **prediction**, generating outputs from the ensemble. By automating feature engineering, architecture search, hyperparameter tuning, and model ensembling, AutoML enables users to efficiently build high-performing ML models through a simple no-code interface.
+
 <ins>Custom training</ins>: You do it yourself solution to build an ML project.
 
 **AI Development Workflow**
