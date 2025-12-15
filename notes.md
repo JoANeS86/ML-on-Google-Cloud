@@ -1,3 +1,7 @@
+# ML on Google Cloud
+
+   The specialization provides an end-to-end learning path for building, deploying, and managing ML models on Google Cloud. It starts with an introduction to AI and ML, covering foundational concepts, Google Cloud AI tools, and the ML lifecycle. Next, learners build, train, and deploy models using Keras, gaining hands-on experience with deep learning, model training, and production deployment. The Feature Engineering course teaches how to process, transform, and optimize data for better model performance. Finally, Machine Learning in the Enterprise focuses on applying ML at scale, addressing challenges like model monitoring, MLOps, and integrating AI into business workflows. Overall, the specialization equips learners with practical skills to develop scalable, real-world ML solutions using Google Cloud.
+
 ## Introduction to AI and Machine Learning on Google Cloud
 
 <ins>Artificial intelligence</ins>, or <ins>AI</ins>, is an umbrella term that includes anything related to computers mimicking human intelligence. Some examples of AI applications include robots and self-driving cars.
