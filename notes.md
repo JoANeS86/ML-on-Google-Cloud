@@ -114,7 +114,7 @@ Compare this process to serving food in a restaurant. Data preparation is when y
 
 **Introduction to the TensorFlow Ecosystem**
 
-TensorFlow in an open-source, high-performance library for numerical computation that uses directed graphs.<br/><br/>
+TensorFlow in an open-source, high-performance library for numerical computation that uses directed graphs. **TensorFlow provides optimized tools and libraries** that make building, training, and deploying ML/deep learning models **faster, easier, and more scalable**.<br/><br/>
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/c4acba15-4178-4196-a805-92451251a464" />
