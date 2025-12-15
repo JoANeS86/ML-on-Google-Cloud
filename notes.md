@@ -134,6 +134,8 @@ TensorFlow is an open-source, high-performance library for numerical computation
 <img src="https://github.com/user-attachments/assets/20e12123-9aaa-49ab-8b6c-cb8db3401eb9" />
 </p>
 
+<ins>Tensors and variables in TensorFlow and how they are used in machine learning</ins>
+
 **tf.constant** creates immutable tensors of various ranks—0D (scalars), 1D (vectors), 2D (matrices), and higher dimensions through stacking. You can slice tensors to access parts of data and reshape them to change their dimensions while keeping the data order. **tf.Variable** creates mutable tensors, useful for model weights that are updated during training. TensorFlow also supports automatic differentiation using **tf.GradientTape**, which records operations during a forward pass and computes gradients in reverse, enabling optimization. Custom gradients can be defined for more control in special cases. Overall, the lesson covers tensor creation, manipulation, and how TensorFlow handles variables and gradients for ML training.
 
 **Design and Build an Input Data Pipeline**
