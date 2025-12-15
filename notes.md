@@ -35,6 +35,8 @@ It lets organizations go from raw data to AI insights efficiently without managi
 
 **Generative AI**
 
+Generative AI (GenAI) is a type of artificial intelligence that creates new, original content like text, images, music, code, or video by learning patterns from massive datasets, rather than just analyzing existing information. It works by predicting what comes next in a sequence, allowing it to produce human-like outputs in response to prompts, powering chatbots, content creation tools, and more, but also raising concerns about copyright and misuse.
+
 <p align="center">
 <img src="https://github.com/user-attachments/assets/34c34045-d71c-4cf6-b6ad-e81bfbda9e2c" />
 </p>
@@ -45,7 +47,7 @@ There are three main approaches for developers to interact with foundational mod
         - API
         - SDKs
 
-**Vertex AI Studio** is a low-code/no-code platform that lets users—from non-technical business analysts to AI developers—rapidly prototype, customize, and deploy generative AI applications using foundation models like Gemini. Effective AI prompts include **task, context, and examples**, and can use techniques like zero-shot, few-shot, chain-of-thought, or retrieval-augmented generation. The platform also offers AI-assisted prompt creation, a prompt gallery, and support for multimodal inputs and outputs, enabling users like Bia and Anne to quickly turn ideas into working AI apps.
+**Vertex AI Studio** is a low-code/no-code platform that lets users—from non-technical business analysts to AI developers—rapidly prototype, customize, and deploy generative AI applications using foundation models like Gemini. Effective AI prompts include **task, context, and examples**, and can use techniques like zero-shot, few-shot, chain-of-thought, or retrieval-augmented generation. The platform also offers AI-assisted prompt creation, a prompt gallery, and support for multimodal inputs and outputs, enabling users to quickly turn ideas into working AI apps.
 
 The second half of the **prompt-to-production lifecycle** in Vertex AI Studio covers **integration, deployment, monitoring, and optimization.** Users can generate code automatically, use SDKs or APIs, and deploy AI apps without worrying about cloud infrastructure. To ensure accurate, up-to-date outputs, models can be **grounded** with trusted data, often via **RAG**. Model quality can be further improved through **prompt design, parameter-efficient tuning**, or **full fine-tuning** using labeled datasets. Vertex AI Studio supports these tuning methods, allowing users to create, monitor, and deploy customized generative AI models for specific tasks, with both technical and low-code approaches.
 
