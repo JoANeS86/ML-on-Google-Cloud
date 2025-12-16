@@ -114,6 +114,28 @@ Compare this process to serving food in a restaurant. Data preparation is when y
 <img src="https://github.com/user-attachments/assets/a3c27f24-4d45-48b3-9c6e-e9a61036249e" />
 </p>
 
+A **pipeline** in machine learning (ML) refers to a series of automated, interconnected steps or processes that handle the workflow from **data processing** to **model deployment**. It's essentially a way of organizing the tasks involved in building, training, and deploying a machine learning model in a structured, repeatable, and automated manner.
+
+Here's a breakdown of what a typical ML pipeline includes:
+
+1. **Data Ingestion**: Collecting and importing data from various sources (e.g., databases, cloud storage).
+2. **Data Preprocessing**: Cleaning, transforming, and preparing the data for training (e.g., handling missing values, scaling features).
+3. **Model Training**: Training the machine learning model using the prepared data.
+4. **Model Evaluation**: Assessing the model's performance using evaluation metrics (e.g., accuracy, precision).
+5. **Model Deployment**: Deploying the trained model to a production environment (e.g., an API endpoint) so it can make real-time predictions.
+6. **Monitoring and Retraining**: Continuously monitoring the model's performance in production and retraining it when needed.
+
+In an **automated pipeline**, each of these steps happens in sequence, often without manual intervention. The pipeline can be automated for things like **continuous integration (CI)** and **continuous delivery (CD)**, meaning the model can automatically be retrained and redeployed based on new data or improved performance metrics.
+
+### Key Points:
+
+* A **pipeline** organizes the entire ML process into a series of tasks or "components."
+* It can be **automated**, allowing for **continuous** training, testing, and deployment.
+* It ensures consistency and repeatability in your ML workflow.
+
+In summary, an ML pipeline automates the steps from data ingestion to model deployment, making the ML process more efficient, scalable, and maintainable.
+
+
 ## Build, Train and Deploy ML Models with Keras on Google Cloud
 
 **Introduction to the TensorFlow Ecosystem**
