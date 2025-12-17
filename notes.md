@@ -234,6 +234,12 @@ Key steps for building efficient input pipelines in TensorFlow with **tf.data.Da
 
 In short, tf.data.Dataset provides a flexible and efficient way to handle large datasets and create optimized input pipelines for training machine learning models.
 
+In this section, we explore how to build a machine learning model to predict property prices, starting with selecting features like square footage (numeric) and property type (categorical). To handle categorical data, we use **feature columns**, such as **numeric_column** for numbers and **categorical_column_with_vocabulary_list** for strings, transforming them into a format suitable for neural networks, like one-hot encoding. We also discuss other feature column types, like **bucketized columns** for discretizing continuous data and **embedding columns** for handling large categorical data efficiently. For complex relationships, we can use **feature crosses** to combine features and help the model learn non-linear patterns. Finally, once features are prepared, we can train the model using **Keras** with **tf.data** for large datasets, utilizing a **dense_features** layer to input the features into the model for training (<ins>It’s common to use **tf.data** to build and manage the input pipeline (loading, preprocessing, batching, etc.), and then use **Keras** for building, training, and evaluating the model. **tf.data** handles the efficient data handling, while **Keras** takes care of model architecture and training, making them work together seamlessly</ins>).
+
+While **tf.data** is responsible for efficiently loading, batching, and transforming data at the pipeline level, **Feature Columns** handle the transformation of individual features before they're fed into the model.
+
+The pipeline would generally follow this order: **tf.data → Feature Columns → Keras**.
+
 **Building Neural Networks witht he TensorFlow and Keras API**
 
 Keras is a neural network Application Programming Interface (API) for Python that is tightly integrated with TensorFlow, which is used to build machine learning models. Keras' models offer a simple, user-friendly way to define a neural network, which will then be built for you by TensorFlow.
