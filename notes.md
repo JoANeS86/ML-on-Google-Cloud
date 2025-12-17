@@ -127,13 +127,65 @@ Here's a breakdown of what a typical ML pipeline includes:
 
 In an **automated pipeline**, each of these steps happens in sequence, often without manual intervention. The pipeline can be automated for things like **continuous integration (CI)** and **continuous delivery (CD)**, meaning the model can automatically be retrained and redeployed based on new data or improved performance metrics.
 
-### Key Points:
+#### Key Points:
 
 * A **pipeline** organizes the entire ML process into a series of tasks or "components."
 * It can be **automated**, allowing for **continuous** training, testing, and deployment.
 * It ensures consistency and repeatability in your ML workflow.
 
 In summary, an ML pipeline automates the steps from data ingestion to model deployment, making the ML process more efficient, scalable, and maintainable.
+
+#### How Neural Networks Learn
+
+Machine learning models—such as DNNs, CNNs, RNNs, and LLMs—are all built upon the foundation of the **artificial neural network (ANN)**. Understanding how an ANN learns explains how most ML models work.
+
+An ANN consists of three main layers: **input**, **hidden**, and **output** layers. Each neuron is connected by weights, which store what the model learns during training.
+
+#### Learning Process
+
+1. **Weighted Sum**:
+   Inputs are multiplied by weights and summed (often with a bias).
+
+2. **Activation Function**:
+   The weighted sum is passed through an activation function to introduce **non-linearity**, allowing the network to solve complex problems.
+
+3. **Forward Propagation**:
+   This process continues layer by layer until the output layer produces a **predicted value (ŷ)**.
+
+4. **Activation Functions**:
+
+   * **ReLU**: Outputs 0 for negative values, keeps positives.
+   * **Sigmoid**: Outputs values between 0 and 1 (binary classification).
+   * **Tanh**: Outputs values between −1 and 1.
+   * **Softmax**: Produces a probability distribution for **multiclass classification**.
+
+5. **Loss / Cost Function**:
+   The prediction is compared to the actual value:
+
+   * **MSE** for regression problems.
+   * **Cross-entropy** for classification problems.
+
+6. **Backpropagation**:
+   If the error is large, the network adjusts weights and biases to reduce it.
+
+7. **Gradient Descent**:
+   Uses derivatives to decide:
+
+   * **Direction** to adjust weights.
+   * **Step size**, controlled by the **learning rate**.
+
+8. **Iteration (Epochs)**:
+   One full training cycle is an **epoch**. Training continues until the cost stops decreasing.
+
+#### Key Concepts
+
+* **Parameters**: Weights and biases learned during training.
+* **Hyperparameters**: Learning rate, number of layers, neurons, activation functions, and epochs—set by humans before training.
+* **Optimization**: The goal is to minimize the cost function by iteratively adjusting parameters.
+
+Neural networks learn by repeatedly making predictions, measuring errors, and updating weights to improve performance—much like humans learning from feedback. These principles apply regardless of network size or complexity and form the foundation of modern machine learning.
+
+---
 
 
 ## Build, Train and Deploy ML Models with Keras on Google Cloud
