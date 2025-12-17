@@ -251,6 +251,19 @@ There are two main ways to apply preprocessing layers: as part of the model's co
 Keras is a neural network Application Programming Interface (API) for Python that is tightly integrated with TensorFlow, which is used to build machine learning models. Keras' models offer a simple, user-friendly way to define a neural network, which will then be built for you by TensorFlow.
 
 
+---
+
+
+## Feature Engineering
+
+
+
+
+
+
+
+
+
 
 
 
