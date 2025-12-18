@@ -256,7 +256,7 @@ Keras is a neural network Application Programming Interface (API) for Python tha
 
 ## Feature Engineering
 
-**Feature Store**
+**Vertex AI Feature Store**
 
 Vertex AI Feature Store helps solve common feature management challenges by providing a centralized, fully managed repository for creating, storing, sharing, and serving machine learning features. It eliminates redundant feature development, reduces dependence on ops teams, enables low-latency online serving and high-throughput batch serving, and prevents training–serving skew by allowing features to be computed once and reused consistently for both training and prediction. Feature Store organizes data using entity types, entities, features, and time-stamped feature values, supports batch and streaming ingestion from BigQuery and Cloud Storage, and provides monitoring for feature quality and drift. By handling infrastructure, scaling, and lifecycle management, Vertex AI Feature Store allows data scientists, ML engineers, developers, and DevOps teams to collaborate efficiently and accelerate the development and deployment of ML applications.
 
