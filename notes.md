@@ -246,7 +246,7 @@ Data is scaled to build end-to-end models that can handle raw input data like im
 
 There are two main ways to apply preprocessing layers: as part of the model's computation graph (which runs synchronously on the GPU) or asynchronously through the **tf.data** pipeline, which utilizes multiple threads on the CPU. The second method is especially useful for data augmentation and other asynchronous tasks. By including preprocessing in the model, you can export it as a fully self-contained solution, making it easier for inference deployment (e.g., in TensorFlow.js) without requiring users to handle preprocessing separately.
 
-**Building Neural Networks witht he TensorFlow and Keras API**
+**Building Neural Networks with he TensorFlow and Keras API**
 
 Keras is a neural network Application Programming Interface (API) for Python that is tightly integrated with TensorFlow, which is used to build machine learning models. Keras' models offer a simple, user-friendly way to define a neural network, which will then be built for you by TensorFlow.
 
