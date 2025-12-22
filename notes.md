@@ -256,6 +256,14 @@ High-level APIs like **tf.keras** provide an accessible, modular, and flexible i
 
 Once a model is trained and performing well, it can be saved and exported using the **SavedModel** format, which is portable, language-neutral, and compatible with TensorFlow Serving. Exported models can then be deployed to cloud platforms, such as Google Cloud AI Platform, where they can be versioned and served for scalable predictions. This allows client applications—web, mobile, or other code—to access the trained model for inference without needing the original in-memory model object. Overall, this workflow—from feature selection, model design, training, and deployment—enables deep learning models to move from experimentation to real-world applications.
 
+<ins>Keras Functional API</ins>
+
+Wide and Deep Learning is a model architecture that combines the strengths of both **memorization** (wide models) and **generalization** (deep models). It’s particularly useful for large-scale regression and classification problems with sparse, high-dimensional data, such as in recommendation systems or ranking tasks. The wide component captures simple linear relationships, while the deep component leverages a neural network to discover more complex patterns by decorrelating the input features. This approach mimics the human ability to both memorize specific instances and generalize to new situations, like understanding that most birds can fly, but with exceptions.
+
+The **Functional API** in Keras offers flexibility by allowing the creation of complex models that may have multiple inputs, outputs, or shared layers. It supports non-linear architectures and enables reusing layers across different parts of the model, helping with data efficiency and reducing the need for large datasets. This approach is useful for tasks like multi-input/multi-output models or shared layers in models processing similar data (e.g., text with overlapping vocabulary). Although it offers strong debugging and validation features, the functional API has limitations when it comes to dynamic architectures like recursive networks.
+
+Overall, Wide and Deep models, built using the Functional API, are powerful tools for scalable and flexible model architectures. They combine the simplicity of linear models with the complexity of deep learning, making them effective for handling diverse and large-scale machine learning problems. However, more complex tasks may require subclassing to go beyond the directed acyclic graph (DAG) structure that the Functional API uses.
+
 
 ---
 
