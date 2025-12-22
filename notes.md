@@ -250,6 +250,12 @@ There are two main ways to apply preprocessing layers: as part of the model's co
 
 Keras is a neural network Application Programming Interface (API) for Python that is tightly integrated with TensorFlow, which is used to build machine learning models. Keras' models offer a simple, user-friendly way to define a neural network, which will then be built for you by TensorFlow.
 
+Deep learning models are built by stacking layers of neurons, where each neuron applies a weighted sum to its inputs followed by a non-linear activation function. Linear layers alone, no matter how many are stacked, cannot increase the model’s expressive power—they collapse into a single linear transformation. Non-linear activation functions such as ReLU, sigmoid, tanh, and their variants are what allow deep neural networks to learn complex patterns. ReLU is especially popular due to its simplicity and fast training, though variants like Leaky ReLU, ELU, and GELU exist to mitigate issues such as the dying ReLU problem.
+
+High-level APIs like **tf.keras** provide an accessible, modular, and flexible interface for defining, training, and evaluating deep learning models. Users can create models by stacking layers, specifying activation functions, compiling them with optimizers and loss functions, and fitting them on data. Optimizers such as SGD, Adam, and FTRL iteratively update the model’s weights to minimize the loss function. Deep networks can achieve more powerful learning but need care to avoid overfitting, using techniques like regularization, and their training progress can be monitored with metrics, callbacks, and visualization tools.
+
+Once a model is trained and performing well, it can be saved and exported using the **SavedModel** format, which is portable, language-neutral, and compatible with TensorFlow Serving. Exported models can then be deployed to cloud platforms, such as Google Cloud AI Platform, where they can be versioned and served for scalable predictions. This allows client applications—web, mobile, or other code—to access the trained model for inference without needing the original in-memory model object. Overall, this workflow—from feature selection, model design, training, and deployment—enables deep learning models to move from experimentation to real-world applications.
+
 
 ---
 
