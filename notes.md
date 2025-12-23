@@ -270,6 +270,19 @@ Regularization includes many techniques that improve a model’s ability to gene
 
 **Training at scale with Vertex AI**
 
+Distributed TensorFlow on **Vertex AI** allows you to train models at scale by using cloud infrastructure: Distributed TensorFlow is a way to train machine learning models across multiple machines or devices simultaneously. It helps speed up training by splitting the workload, allowing large models and datasets to be processed more efficiently. Instead of running on a single machine, the work is distributed across many, which can significantly reduce training time. Before training, prepare and upload your data to **Google Cloud Storage**. The training code is typically split into `task.py` (handles job details) and `model.py` (core ML logic). For Vertex AI, package the code using `setup.py` and upload it to Google Cloud Storage.
+
+When submitting a job, specify details like the region, job name, and Python package URIs. For distributed training, configure multiple worker pools (for multiple replicas). Use a prebuilt container or a custom one, and include parameters like machine type, number of replicas, and arguments like data path and batch size.
+
+For efficient ML training, ensure the Cloud Storage bucket is in a single region. Monitor jobs via the **Google Cloud Console** and use **TensorBoard** to track performance and debug. Once the training is done, Vertex AI helps deploy the model for predictions via scalable, secure REST APIs for both real-time and batch inferences.
+
+      A job is a task you send to the cloud to run, like training your machine learning model. It includes everything the system
+      needs to know, such as your code, the data, and any settings or options for training the model.
+      
+      A prebuilt container is a ready-to-use package that has everything needed to run your model, like TensorFlow and other software.
+      It saves you the trouble of setting everything up yourself, so you can just focus on training your model without worrying about
+      the environment.
+
 
 ---
 
