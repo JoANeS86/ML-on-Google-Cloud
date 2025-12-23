@@ -279,9 +279,9 @@ For efficient ML training, ensure the Cloud Storage bucket is in a single region
       A job is a task you send to the cloud to run, like training your machine learning model. It includes everything the system
       needs to know, such as your code, the data, and any settings or options for training the model.
       
-      A prebuilt container is a ready-to-use package that has everything needed to run your model, like TensorFlow and other software.
-      It saves you the trouble of setting everything up yourself, so you can just focus on training your model without worrying about
-      the environment.
+      A prebuilt container is a ready-to-use package that has everything needed to run your model, like TensorFlow and
+      other software. It saves you the trouble of setting everything up yourself, so you can just focus on training your
+      model without worrying about the environment.
 
 
 ---
