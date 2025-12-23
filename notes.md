@@ -266,6 +266,10 @@ Overall, Wide and Deep models, built using the Functional API, are powerful tool
 
 Model training aims to minimize loss, but when training loss keeps decreasing while test loss starts increasing, the model is overfitting—memorizing training data instead of generalizing. Early stopping can help, but it doesn’t address the root problem when the model itself is too complex. Regularization tackles this by penalizing model complexity, encouraging simpler models that generalize better. Visual tools like TensorFlow Playground show how overly complex features can create arbitrary decision boundaries and worsen test performance. This aligns with Occam’s razor: prefer simpler models with fewer assumptions. The key is to balance fitting the data well with keeping the model simple, controlled through a regularization term weighted by a tunable hyperparameter (lambda), which is data-dependent and must be carefully chosen.
 
+Regularization includes many techniques that improve a model’s ability to generalize to unseen data, with L1 and L2 regularization being two common methods based on penalizing parameter magnitudes. Both measure model complexity using the norm of the weight vector: **L2 regularization** uses the Euclidean norm, encouraging weights to stay small and smooth (weight decay), while **L1 regularization** uses the sum of absolute values, often driving some weights exactly to zero. A tunable hyperparameter, **lambda**, controls the trade-off between minimizing training loss and keeping the model simple, and its optimal value is data-dependent. L2 helps prevent overly large weights, whereas L1 promotes sparsity and is widely used for feature selection by effectively removing less important features.
+
+**Training at scale with Vertex AI**
+
 
 ---
 
