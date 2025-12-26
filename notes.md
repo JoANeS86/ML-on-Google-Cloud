@@ -340,6 +340,41 @@ Missing values must also be handled explicitly—typically with **indicator colu
 
 Feature engineering is an **iterative, insight-driven process** that bridges raw data and machine learning models. By selecting features that are relevant, available at prediction time, numeric with meaningful magnitude, and well-supported by data—and by representing them consistently and carefully—you make the learning problem easier for the model and dramatically improve real-world performance.
 
+**Feature Engineering**
+
+<ins>1. Machine Learning vs. Statistics</ins>:
+
+   * In **statistics**, missing values are often imputed (e.g., replaced with the average), and outliers are typically removed.
+   * In **machine learning (ML)**, the approach is different. Missing data might lead to creating separate models for data with or without missing values. Outliers are considered useful, and you might even use them to train models.
+   * ML can handle large datasets, so it can work with missing values or outliers by creating specific features or models to accommodate them. On the other hand, statistics focuses on maximizing the value from the data you already have.
+
+<ins>2. Feature Representation</ins>:
+
+   * In ML, **features** (input data for models) can be transformed. For example, instead of using latitude as a continuous number, you can split it into distinct categories (bins), like "LatitudeBin1", "LatitudeBin2", etc., to better represent the data.
+   * You might also use techniques like **one-hot encoding** for categorical features (e.g., converting words into binary features) or **sparse feature embeddings** for high-cardinality categorical data.
+
+<ins>3. Feature Construction</ins>:
+
+   * **Feature construction** involves creating new features based on existing data using techniques like **polynomial expansion**, **feature crossing** (combining features), or even domain-specific logic (e.g., using business knowledge).
+
+<ins>4. BigQuery ML</ins>:
+
+   * **BigQuery ML** supports both **automatic** and **manual feature pre-processing**. This includes converting data types, handling missing values, and using SQL functions to manipulate data (e.g., extracting date parts, filtering out invalid records).
+   * You can use BigQuery ML's **TRANSFORM clause** for custom pre-processing, and it supports operations like filtering out bogus data (e.g., rides with zero miles), extracting time-based features (like day of the week, hour, etc.), and converting categorical data with one-hot encoding.
+
+<ins>5. New York Taxi Fare Prediction</ins>:
+
+   * The module uses the **New York City taxi ride dataset** for a regression problem: predicting taxi fare prices.
+   * The **baseline model** starts without feature engineering, and a **final model** with feature engineering aims to improve the model's predictions.
+   * The evaluation metric for the model’s performance is **Root Mean Squared Error (RMSE)**, where lower values indicate better predictions. In this case, the baseline model's RMSE is used as a comparison point to gauge improvements.
+
+<ins>6. Feature Engineering for Better Model Accuracy</ins>:
+
+   * By applying feature engineering (like date extraction, filtering, and transforming categorical data), the **final model** can improve prediction accuracy, reducing RMSE and making more accurate fare predictions.
+
+<ins>Key Takeaway</ins>
+
+In summary, the module focuses on how ML, particularly in BigQuery, handles data preprocessing (like feature transformation and construction) and how it differs from traditional statistical approaches. It emphasizes how feature engineering can significantly improve model performance in practical applications like predicting taxi fares.
 
 
 
