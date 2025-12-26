@@ -376,6 +376,30 @@ Feature engineering is an **iterative, insight-driven process** that bridges raw
 
 In summary, the module focuses on how ML, particularly in BigQuery, handles data preprocessing (like feature transformation and construction) and how it differs from traditional statistical approaches. It emphasizes how feature engineering can significantly improve model performance in practical applications like predicting taxi fares.
 
+<ins>Feature crosses in BigQuery ML</ins> are an advanced feature-engineering technique defined in the `TRANSFORM` clause, which applies preprocessing consistently during training, evaluation, and prediction. A feature cross creates a new categorical feature by combining two or more input features (for example, *hour of day × day of week*).
+
+Feature crosses are primarily about **memorization rather than generalization**. They work best when you have **very large datasets**, where each combination (or “grid cell”) has enough data to be statistically meaningful. In such cases, the model can effectively learn the average behavior for each combination. This is why feature crosses are common in real-world, large-scale ML systems, even though they are less emphasized in traditional ML on smaller datasets.
+
+When you cross categorical features like *hour of day* and *day of week*, each data point activates **exactly one crossed feature** (e.g., “Wednesday at 3 PM”), while all others are zero. This results in a **high-dimensional, very sparse input representation**—mostly zeros with a single one per example.
+
+<ins>Sparsity has advantages</ins>:
+
+* Fewer effective features are active per example.
+* Lower risk of overfitting when paired with linear models.
+* Easier training and better interpretability.
+* Sparse matrices are well supported by frameworks like TensorFlow.
+
+Because feature crosses produce many independent columns, **linear models** often work well and keep the number of free parameters manageable.
+
+The text also highlights **spatial feature engineering** in BigQuery ML using geography functions (prefixed with `ST_`), such as `ST_DISTANCE`, which computes distances between geographic coordinates.
+
+Finally, **data typing matters** in BigQuery ML:
+
+* Numeric fields are treated as continuous features.
+* String fields are treated as categorical features.
+  To correctly create feature crosses, features like *day of week* and *hour of day* must be **cast to strings**. Otherwise, BigQuery ML would interpret them as numeric values, losing their categorical meaning and making the feature cross ineffective.
+
+<ins>In short</ins>: feature crosses are powerful, sparse, memorization-based features that shine on large datasets, are easy to define in BigQuery ML, and require careful handling of categorical data types to work correctly.
 
 
 
