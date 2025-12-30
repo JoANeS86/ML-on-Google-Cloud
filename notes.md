@@ -428,11 +428,19 @@ The key benefit of using Dataflow is its ability to elastically scale based on t
 
 Overall, Apache Beam and Dataflow provide an efficient and flexible way to process and transform data at scale with minimal manual configuration.
 
+## Machine Learning in the Enterprise
 
+**Understanding the ML Enterprise Workflow**
 
+The lesson presents an enterprise-level machine learning (ML) workflow, emphasizing the **transition from experimentation to production**. As teams mature, the workflow evolves to include **version control** and a more structured approach. **Data scientists** begin by experimenting with models, refining problems, selecting relevant data, and engineering features. During this phase, various algorithms are tested, and models are iteratively tuned and evaluated. **Version control** plays a crucial role in managing code and configurations, ensuring **reproducibility** and making future reuse easier.
 
+Once a model has been developed, the process moves into **operationalization**, where models are prepared for **automated retraining** in case they need updates in the future. This stage also involves building components like inference scripts and deployment workflows to make the model ready for production. The **deployment** itself can be done using either **code-based** or **no-code solutions**, depending on the tools used. Models can then be deployed to serve predictions in **real-time (online inference)**, **near real-time (streaming inference)**, or in **batch** processes.
 
+A key focus of the workflow is ensuring that the predictions made by the models are interpretable and trustworthy. This is done through techniques like **feature attribution**, which provide insights into the reasons behind a prediction.
 
+The **Vertex AI** platform is highlighted as a unified tool that supports the entire ML lifecycle—from experimentation to deployment. It helps manage training, monitoring, and explainability, while also offering automated services for model tracking and metadata management.
+
+In essence, this workflow ensures that ML models are not only developed efficiently but can be easily maintained, trusted, and integrated into real-world applications, with every step supported by **traceability** and **transparency**.
 
 
 
