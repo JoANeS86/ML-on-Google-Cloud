@@ -420,6 +420,13 @@ Here’s a summary of the key points:
 
 In essence, the passage highlights the importance of feature engineering (such as feature crosses and bucketization) and the advantages of automating preprocessing steps through BigQuery ML's `TRANSFORM` clause, allowing for consistent and efficient model training, evaluation, and prediction.
 
+**Preprocessing and Feature Creation**
+
+This module introduces **Apache Beam** and **Google Cloud Dataflow** as powerful tools for building and running scalable data processing pipelines. Dataflow is a fully managed, serverless platform that allows developers to process large-scale data without managing infrastructure. It works by defining a pipeline in **Apache Beam**, where the data goes through a series of transformations (called **transforms**) on **PCollections** (the main data structure used in **Apache Beam**. They represent a **distributed collection of data** that can be processed in parallel across multiple machines. Think of them like a list or array, but designed to handle large amounts of data efficiently across a cluster). These pipelines can handle both **batch** and **streaming** data, and the output can be saved to various destinations like **Google Cloud Storage** or **BigQuery**.
+
+The key benefit of using Dataflow is its ability to elastically scale based on the data size, automatically adjusting the compute resources as needed. The pipelines are executed using a **runner**, which can be run on Dataflow or other platforms like Apache Spark. Dataflow also handles output **sharding** to avoid file contention when writing results (meaning **Dataflow** splits the output into multiple smaller files, called **shards**, when writing the results). This prevents multiple machines from trying to write to the same file at the same time, avoiding errors or delays.
+
+Overall, Apache Beam and Dataflow provide an efficient and flexible way to process and transform data at scale with minimal manual configuration.
 
 
 
