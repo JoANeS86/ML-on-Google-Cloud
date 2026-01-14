@@ -430,18 +430,47 @@ Overall, Apache Beam and Dataflow provide an efficient and flexible way to proce
 
 ## Machine Learning in the Enterprise
 
+This course, part of the *Machine Learning on Google Cloud* series, teaches how a diverse team of data analysts, data scientists, software developers, and machine learning engineers can work together on various ML and AI projects within an enterprise. While the team is already familiar with AutoML and BigQuery ML, they will deepen their understanding by learning how to build custom training models using Vertex AI. Throughout the course, they will explore key topics such as data management, governance, and pre-processing, and learn when to use tools like Vertex AutoML, BigQuery ML, and custom training. The course also covers implementing Vertex Vizier Hyperparameter Tuning for model optimization, creating both batch and online predictions, setting up model monitoring, and building pipelines with Vertex AI. The goal is to equip the team with the knowledge to effectively manage and develop advanced machine learning models in the Google Cloud environment.
+
 **Understanding the ML Enterprise Workflow**
 
-The lesson presents an enterprise-level machine learning (ML) workflow, emphasizing the **transition from experimentation to production**. As teams mature, the workflow evolves to include **version control** and a more structured approach. **Data scientists** begin by experimenting with models, refining problems, selecting relevant data, and engineering features. During this phase, various algorithms are tested, and models are iteratively tuned and evaluated. **Version control** plays a crucial role in managing code and configurations, ensuring **reproducibility** and making future reuse easier.
+The lesson presents an enterprise-level machine learning (ML) workflow, emphasizing the **transition from experimentation to production**.
 
-Once a model has been developed, the process moves into **operationalization**, where models are prepared for **automated retraining** in case they need updates in the future. This stage also involves building components like inference scripts and deployment workflows to make the model ready for production. The **deployment** itself can be done using either **code-based** or **no-code solutions**, depending on the tools used. Models can then be deployed to serve predictions in **real-time (online inference)**, **near real-time (streaming inference)**, or in **batch** processes.
+<ins>Standard ML High Level Workflow</ins>
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/e4291afa-eafa-484f-928c-c33f69c35f42" />
+</p><br/><br/>
+
+<p align="center">
+Transition from experimentation to production.
+</p><br/><br/>
+
+<ins>More robust ML Workflow</ins>
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/25a7b736-ef67-446c-bacd-043d08332b70" />
+</p><br/><br/>
+
+Model deployment can be through a no code or code based solution, this slide shows a simple workflow of a no code solution.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/82538aff-331b-4877-84a9-1989e98e999e" />
+</p><br/><br/>
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/d922e8be-3b91-4277-b195-c15d06455e9e" />
+</p><br/><br/>
+
+As teams mature, the workflow evolves to include **version control** and a more structured approach. **Data scientists** begin by experimenting with models, refining problems, selecting relevant data, and engineering features. During this phase, various algorithms are tested, and models are iteratively tuned and evaluated. **Version control** plays a crucial role in managing code and configurations, ensuring **reproducibility** and making future reuse easier.
+
+Once a model has been developed, the process moves into **operationalization**, where models are prepared for **automated retraining** in case they need updates in the future (**Training operationalization** in machine learning refers to the process of turning a trained machine learning model into a working part of an application or system. This involves steps like automating the model’s training, testing it in real-world scenarios, monitoring its performance, and integrating it into production environments so it can make predictions or decisions in real-time. Essentially, it’s about taking a model from development to deployment and ensuring it runs efficiently and continuously over time). This stage also involves building components like inference scripts and deployment workflows to make the model ready for production. The **deployment** itself can be done using either **code-based** or **no-code solutions**, depending on the tools used. Models can then be deployed to serve predictions in **real-time (online inference)**, **near real-time (streaming inference)**, or in **batch** processes.
 
 A key focus of the workflow is ensuring that the predictions made by the models are interpretable and trustworthy. This is done through techniques like **feature attribution**, which provide insights into the reasons behind a prediction.
 
 The **Vertex AI** platform is highlighted as a unified tool that supports the entire ML lifecycle—from experimentation to deployment. It helps manage training, monitoring, and explainability, while also offering automated services for model tracking and metadata management.
 
 In essence, this workflow ensures that ML models are not only developed efficiently but can be easily maintained, trusted, and integrated into real-world applications, with every step supported by **traceability** and **transparency**.
-
 
 
 
