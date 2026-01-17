@@ -472,6 +472,25 @@ The **Vertex AI** platform is highlighted as a unified tool that supports the en
 
 In essence, this workflow ensures that ML models are not only developed efficiently but can be easily maintained, trusted, and integrated into real-world applications, with every step supported by **traceability** and **transparency**.
 
+**Data in the Enterprise**
+
+<ins>Vertex AI Feature Store</ins> is a fully managed solution that helps ML teams manage, share, and serve features efficiently. It solves common problems such as duplicate feature creation, operational dependency on Ops teams, training–serving skew, and difficulty serving features at low latency.
+
+By providing a centralized feature repository, Feature Store enables easy discovery, reuse, and permission management of features across teams. It supports both batch and real-time ingestion, low-latency online serving for real-time predictions, and high-throughput batch serving for training and batch predictions. Computing features once and reusing them for both training and serving improves consistency and reduces errors.
+
+Overall, Vertex AI Feature Store simplifies feature lifecycle management, reduces operational overhead, and helps ML teams scale reliably.
+
+<ins>Data Catalog</ins> catalogs metadata from Google Cloud data sources such as BigQuery datasets, tables, views, Pub/Sub topics, and other databases. It also supports custom data resources through APIs. Once data is cataloged, teams can enrich it with tags and metadata, making data easier to discover, understand, govern, and use efficiently across the organization.
+
+<ins>Dataplex</ins> is an intelligent data fabric that centrally manages, governs, and monitors data across lakes, warehouses, and marts without moving or duplicating it. It uses logical constructs—lakes, zones, and assets—to organize data by business and readiness while enforcing consistent security and governance.
+
+With built-in AI/ML data intelligence, Dataplex automatically harvests metadata, runs data quality checks, and makes data discoverable and usable across analytics tools like BigQuery, Spark, and Presto. It enables access to trusted, high-quality data at scale with flexibility in storage and analytics choices.
+
+<ins>Analytics Hub</ins> enables secure, governed sharing of data and analytics assets—such as BigQuery datasets and views—without copying data. It supports open, privacy-safe data ecosystems that include public, industry, commercial, and Google-provided exchanges.
+
+Analytics Hub defines three roles (publisher, exchange administrator, subscriber) and three components (publisher project, exchange, subscriber project). Publishers share datasets through curated exchanges, and subscribers link to them easily in their own projects. This approach reduces cost, improves data freshness, maintains governance, and makes cross-organization data sharing simple and scalable.
+
+
 
 
 
