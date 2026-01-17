@@ -490,6 +490,15 @@ With built-in AI/ML data intelligence, Dataplex automatically harvests metadata,
 
 Analytics Hub defines three roles (publisher, exchange administrator, subscriber) and three components (publisher project, exchange, subscriber project). Publishers share datasets through curated exchanges, and subscribers link to them easily in their own projects. This approach reduces cost, improves data freshness, maintains governance, and makes cross-organization data sharing simple and scalable.
 
+<ins>Data preprocessing for ML</ins> depends on data type and scale:
+
+* **Tabular data:** Use **BigQuery** for transformations.
+* **Large unstructured data:** Use **Dataflow** to convert data into efficient formats like TFRecord.
+* **Spark/Hadoop environments:** Use **Dataproc** for ETL with autoscaling.
+* **Small datasets:** Use Python scripts or **pandas**.
+* **TensorFlow workflows:** Use **TFX** and **TensorFlow Transform** for preprocessing functions.
+
+Choosing the right tool ensures scalable, efficient, and production-ready ML pipelines.
 
 
 
