@@ -500,8 +500,19 @@ Analytics Hub defines three roles (publisher, exchange administrator, subscriber
 
 Choosing the right tool ensures scalable, efficient, and production-ready ML pipelines.
 
+**Science of Machine Learning and Custom Training**
 
+ML training depends heavily on tuning two key hyperparameters: **learning rate** and **batch size**. The learning rate controls how large each optimization step is (too large leads to unstable training, while too small makes training slow). Batch size determines how many samples are used to compute each gradient update (small batches train faster but noisier, while large batches are smoother but slower). These two parameters strongly interact (usually, larger batch sizes require smaller learning rates), and there are no strict rules for choosing them, which is why machine learning involves both science and intuition.
 
+The lesson also highlights that modern machine learning must run across many types of hardware, including CPUs, GPUs, TPUs, mobile devices, and embedded systems, making portable and scalable code essential. As datasets grow and models become more complex, performance improves, but computational requirements increase exponentially. This rapid growth in compute demand has made distributed systems a necessity for training large, real-world neural networks with millions of parameters.
+
+<ins>Make training faster</ins>: Training deep learning models can take a very long time, which slows experimentation and progress. To speed this up, models use faster hardware (GPUs, TPUs), optimized input pipelines, and **distributed training**, where training runs in parallel across multiple devices or machines. Distributed training can scale nearly linearly, processing more data as more devices are added.
+
+The most common approach is **data parallelism**, where each device trains the same model on different data and shares gradients. This can be done using either **asynchronous parameter servers**, which scale well but may use stale updates, or **synchronous all-reduce**, which keeps workers in sync and converges faster on powerful, well-connected hardware. Another approach, **model parallelism**, splits very large models across devices when they cannot fit on a single one.
+
+<ins>When to use Custom Training</ins>: AutoML is a codeless option that requires little data preparation and no data science or programming expertise, but it is limited to predefined supervised learning objectives and offers minimal control over model tuning and training environment. Custom training, in contrast, requires data science and programming expertise, more data preparation, and development effort, but provides full flexibility over model objectives, architecture, frameworks, hyperparameters, and compute resources.
+
+AuthoML should be used when the use case fits supported AutoML tasks and you want to quickly build a baseline model. Custom training is preferred when the use case is not supported by AutoML, involves mixed data types, requires non-standard objectives like clustering, or needs greater control over training and deployment. Vertex AI custom training offers additional benefits such as automatic resource provisioning and cleanup, reproducibility, portability through containers, parameterized training jobs, integration with other AI services, monitoring, logging, and support for distributed training to speed up model development.
 
 
 
