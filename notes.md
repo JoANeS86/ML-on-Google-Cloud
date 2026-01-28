@@ -514,6 +514,13 @@ The most common approach is **data parallelism**, where each device trains the s
 
 AutoML should be used when the use case fits supported AutoML tasks and you want to quickly build a baseline model. Custom training is preferred when the use case is not supported by AutoML, involves mixed data types, requires non-standard objectives like clustering, or needs greater control over training and deployment. Vertex AI custom training offers additional benefits such as automatic resource provisioning and cleanup, reproducibility, portability through containers, parameterized training jobs, integration with other AI services, monitoring, logging, and support for distributed training to speed up model development.
 
+<ins>Training requirements and dependencies</ins>: When using Vertex AI for training, you need to decide how to structure your ML code. You can either use a **prebuilt container** with a framework like PyTorch or TensorFlow (if it meets your dependency needs) or create a **custom container** for more flexibility with dependencies. It's recommended to store your data separately in **Cloud Storage** or **BigQuery** to keep your project organized and scalable.
+
+After training, you must export your model to **Cloud Storage** because you can't access the VMs that ran the training. If you're working with large datasets, you can use **distributed training** by running your code on multiple VMs across **worker pools**.
+
+You can test and build your Docker images locally with the **local-run** command before pushing them to **Artifact Registry**. This allows you to debug your code, install dependencies, and configure settings (such as GPU support) before training on Vertex AI.
+
+Lastly, if you plan to use **Google Cloud credentials** during training, you can manage them with **application default credentials (ADC)** or a specific **service account key**. For large Docker images (up to 5TB), be mindful of upload time and authentication limits.
 
 
 
