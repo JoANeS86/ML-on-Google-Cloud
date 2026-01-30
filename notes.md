@@ -522,12 +522,7 @@ You can test and build your Docker images locally with the **local-run** command
 
 Lastly, if you plan to use **Google Cloud credentials** during training, you can manage them with **application default credentials (ADC)** or a specific **service account key**. For large Docker images (up to 5TB), be mindful of upload time and authentication limits.
 
-
-### REFINE NEXT!!!:
-
----
-
-This lesson explains **hyperparameter tuning** and how **Vertex AI Vizier** helps optimize machine learning models more efficiently. While models learn from data automatically, their performance depends heavily on user-defined **hyperparameters** such as learning rate, optimizer settings, number of epochs, and network architecture. Choosing good values can significantly improve model accuracy and generalization.
+<ins>Vertex Vizier Hyperparameter Tuning</ins>: While models learn from data automatically, their performance depends heavily on user-defined **hyperparameters** such as learning rate, optimizer settings, number of epochs, and network architecture. Choosing good values can significantly improve model accuracy and generalization.
 
 The lesson contrasts three tuning approaches:
 
@@ -539,7 +534,7 @@ Vertex AI Vizier supports all three methods, with **Bayesian optimization as the
 
 Vizier works as a **black-box optimization service**, meaning it can tune hyperparameters for models built with any framework, as long as the training code reports a target metric (such as validation accuracy). In the example, a custom containerized TensorFlow model is tuned for learning rate, optimizer momentum, and number of neurons. Vizier runs multiple trials, evaluates model performance, and identifies the best hyperparameter configuration based on the chosen optimization metric.
 
-Overall, the lesson shows how Vertex AI Vizier simplifies and automates hyperparameter tuning, enabling faster convergence to high-quality models while minimizing unnecessary training runs.
+Vertex AI Vizier simplifies and automates hyperparameter tuning, enabling faster convergence to high-quality models while minimizing unnecessary training runs.
 
 
 
