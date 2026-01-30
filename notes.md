@@ -538,7 +538,7 @@ Vizier works as a **black-box optimization service**, meaning it can tune hyperp
 
 Vertex AI Vizier simplifies and automates hyperparameter tuning, enabling faster convergence to high-quality models while minimizing unnecessary training runs.
 
-**Prediction and Model Monitorin Using Vertex AI**
+**Prediction and Model Monitoring Using Vertex AI**
 
 Vertex AI supports <ins>batch and online predictions</ins> using **AutoML models**, **pre-built containers**, or **custom containers**. Once a model performs well, it can be used for production-scale or one-time predictions depending on the use case.
 
