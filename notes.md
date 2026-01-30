@@ -522,7 +522,9 @@ You can test and build your Docker images locally with the **local-run** command
 
 Lastly, if you plan to use **Google Cloud credentials** during training, you can manage them with **application default credentials (ADC)** or a specific **service account key**. For large Docker images (up to 5TB), be mindful of upload time and authentication limits.
 
-<ins>Vertex Vizier Hyperparameter Tuning</ins>: While models learn from data automatically, their performance depends heavily on user-defined **hyperparameters** such as learning rate, optimizer settings, number of epochs, and network architecture. Choosing good values can significantly improve model accuracy and generalization.
+**Vertex Vizier Hyperparameter Tuning**
+
+While models learn from data automatically, their performance depends heavily on user-defined **hyperparameters** such as learning rate, optimizer settings, number of epochs, and network architecture. Choosing good values can significantly improve model accuracy and generalization.
 
 The lesson contrasts three tuning approaches:
 
@@ -535,6 +537,39 @@ Vertex AI Vizier supports all three methods, with **Bayesian optimization as the
 Vizier works as a **black-box optimization service**, meaning it can tune hyperparameters for models built with any framework, as long as the training code reports a target metric (such as validation accuracy). In the example, a custom containerized TensorFlow model is tuned for learning rate, optimizer momentum, and number of neurons. Vizier runs multiple trials, evaluates model performance, and identifies the best hyperparameter configuration based on the chosen optimization metric.
 
 Vertex AI Vizier simplifies and automates hyperparameter tuning, enabling faster convergence to high-quality models while minimizing unnecessary training runs.
+
+**Prediction and Model Monitorin Using Vertex AI**
+
+Vertex AI supports <ins>batch and online predictions</ins> using **AutoML models**, **pre-built containers**, or **custom containers**. Once a model performs well, it can be used for production-scale or one-time predictions depending on the use case.
+
+**Batch prediction** is asynchronous and designed for large volumes of data processed in a single request. Results are written to Cloud Storage or BigQuery, and the model does not need to be deployed to an endpoint. This approach is ideal when immediate responses aren’t required. Input and output formats vary by model type, and there are size, location, and permission requirements for BigQuery tables and CSV files.
+
+**Online prediction** is synchronous and optimized for real-time use cases where low latency is required. Models must be deployed to an endpoint and predictions are served one request at a time through a REST API.
+
+Vertex AI offers **pre-built Docker containers** that simplify serving predictions and explanations for common ML frameworks. For more flexibility, **custom containers** can be used, provided they implement HTTP endpoints for health checks and prediction requests.
+
+Prediction outputs can include **confidence intervals, baseline values, and feature importance**, helping explain how individual features influenced the prediction.
+
+**Vertex AI Model Monitoring** helps you track how deployed models behave in production and detect issues such as **data drift**, **training-serving skew**, and changes in **feature attribution**. It provides automated analysis and visualizations to compare real-world prediction data against defined baselines, helping ensure models remain reliable over time.
+
+<ins>Model management using Vertex AI</ins>: Model monitoring is enabled at the **endpoint level** and applies to all models deployed to that endpoint. It periodically analyzes logged prediction inputs using a configurable **monitoring frequency** and **time window**, with optional **sampling** to control how much data is analyzed. Alerts can be configured and are sent via email when drift or skew thresholds are exceeded or when monitoring settings change.
+
+Monitoring supports **tabular and custom models** and uses statistical distance measures—such as **Jensen-Shannon divergence** and **L-infinity distance**—to compare feature distributions.
+
+* **Training-serving skew** compares production data to the original training data.
+* **Prediction drift** compares recent production data to past production data.
+
+The service automatically generates schemas if they are not provided and visualizes feature distributions (histograms for numerical features and frequency counts for categorical features). When significant drift or skew is detected, the insights can guide actions such as adjusting feature pipelines or retraining models.
+
+Overall, Vertex AI Model Monitoring provides continuous visibility into model health, enabling proactive detection of data issues that can degrade model performance.
+
+
+
+
+
+
+
+
 
 
 
