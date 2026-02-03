@@ -563,7 +563,15 @@ The service automatically generates schemas if they are not provided and visuali
 
 Overall, Vertex AI Model Monitoring provides continuous visibility into model health, enabling proactive detection of data issues that can degrade model performance.
 
+**Vertex AI Pipelines**
 
+<ins>Vertex AI pipeline</ins>: What it is and how it’s used to automate and orchestrate an end-to-end machine learning workflow. A pipeline is made up of modular components that run sequentially, covering steps such as data extraction, preprocessing, model training, evaluation, deployment, and retraining. To work effectively in production, these components must be orchestrated so their dependencies, data flow, and schedules are properly coordinated—this process is known as machine learning orchestration.
+
+Vertex AI pipelines are scalable, portable ML workflows built on containers and Google Cloud services. They can run pipelines created with either the Kubeflow Pipelines SDK or TensorFlow Extended (TFX). TFX is recommended for TensorFlow workflows that handle very large structured or text datasets, while Kubeflow Pipelines is recommended for other use cases.
+
+To use Vertex AI pipelines, you first define your workflow as a pipeline. This includes setting up environment variables (such as project ID and region), creating components like a model training step that consumes dataset outputs, and defining deployment steps. Deployment involves creating an endpoint and deploying the trained model with specified minimum and maximum replica counts to manage scaling based on prediction load.
+
+After defining the workflow, the pipeline is compiled into a JSON file that contains all the information needed to execute it. This compiled pipeline is then submitted and run using the Vertex AI Python client.
 
 
 
