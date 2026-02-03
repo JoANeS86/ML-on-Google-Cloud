@@ -569,6 +569,8 @@ Overall, Vertex AI Model Monitoring provides continuous visibility into model he
 
 Vertex AI pipelines are scalable, portable ML workflows built on containers and Google Cloud services. They can run pipelines created with either the Kubeflow Pipelines SDK or TensorFlow Extended (TFX). TFX is recommended for TensorFlow workflows that handle very large structured or text datasets, while Kubeflow Pipelines is recommended for other use cases.
 
+You **build** pipelines using **Kubeflow Pipelines or TFX**, and **Vertex AI Pipelines** is the service that **runs and manages (orchestrates)** those pipelines on Google Cloud.
+
 To use Vertex AI pipelines, you first define your workflow as a pipeline. This includes setting up environment variables (such as project ID and region), creating components like a model training step that consumes dataset outputs, and defining deployment steps. Deployment involves creating an endpoint and deploying the trained model with specified minimum and maximum replica counts to manage scaling based on prediction load.
 
 After defining the workflow, the pipeline is compiled into a JSON file that contains all the information needed to execute it. This compiled pipeline is then submitted and run using the Vertex AI Python client.
