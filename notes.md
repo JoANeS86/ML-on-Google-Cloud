@@ -101,7 +101,7 @@ There are three main stages to the ML workflow with Vertex AI.
                 Two steps: Data uploading and feature engineering.
                 Data types: Streaming versus batch data, and structured versus unstructured data.
                 
-        - Data development: A model needs a tremedous amount of iterative training (Train the model, evaluate it,
+        - Model development: A model needs a tremedous amount of iterative training (Train the model, evaluate it,
         train the model some more).
 
         - Model serving: Deploy and monitor the model.
