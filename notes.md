@@ -514,6 +514,20 @@ The most common approach is **data parallelism**, where each device trains the s
 
 AutoML should be used when the use case fits supported AutoML tasks and you want to quickly build a baseline model. Custom training is preferred when the use case is not supported by AutoML, involves mixed data types, requires non-standard objectives like clustering, or needs greater control over training and deployment. Vertex AI custom training offers additional benefits such as automatic resource provisioning and cleanup, reproducibility, portability through containers, parameterized training jobs, integration with other AI services, monitoring, logging, and support for distributed training to speed up model development.
 
+In machine learning, a **model artifact** is the saved output of a trained model.
+
+It usually includes:
+
+* The **trained model weights/parameters**
+* The **model architecture**
+* Sometimes **preprocessing steps** (like scalers or encoders)
+* Metadata (training version, metrics, etc.)
+
+In simple terms:
+👉 A model artifact is the file (or files) you save after training so you can later load the model and use it for predictions without retraining.
+
+**A trained model is saved as a Model Artifact (the model file), which is packaged together with the necessary code and dependencies into a Docker Image, and when that image is run as a Container, it becomes a live application that can use the model to make predictions.**
+
 <ins>Training requirements and dependencies</ins>: When using Vertex AI for training, you need to decide how to structure your ML code. You can either use a **prebuilt container** with a framework like PyTorch or TensorFlow (if it meets your dependency needs) or create a **custom container** for more flexibility with dependencies. It's recommended to store your data separately in **Cloud Storage** or **BigQuery** to keep your project organized and scalable.
 
 After training, you must export your model to **Cloud Storage** because you can't access the VMs that ran the training. If you're working with large datasets, you can use **distributed training** by running your code on multiple VMs across **worker pools**.
